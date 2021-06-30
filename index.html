@@ -1,46 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/styles/style.css">
-  <title>Edie Homepage</title>
-</head>
-<body>
-  <div id="container">
-    <header class="homepage-heading">
-      <div id="homepage-logo">
-        <h1>Edie</h1>
-      </div>
-      <div id="heading-menu">
-        <a href="">Home</a>
-        <a href="">Services</a>
-        <a href="">Our Works</a>
-        <a href="">Clients</a>
-        <a href="">Products</a>
-      </div>
-    </header>
-    <main id="page-content">
-      <div class="page-introduction">
-        <div class="intro-section">
-          <p>Unhappy with your website?</p>
-          <h1>We create beautiful and fast web services</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Edie Homepage</title>
+  </head>
+  <body>
+    <div id="container">
+      <header class="homepage-heading">
+        <div class="homepage-logo">
+          <h1>Edie</h1>
         </div>
-        <img src="images/heroImage.jpg" alt="hero-image" class="intro-photo">
-        <div class="intro-section">
-          <h1>Story, emotion and purpose</h1>
-          <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+        <div id="mobile-menu-burger">
+          <span class="material-icons"> menu </span>
         </div>
-        <form class="contact-section">
-            <label for="contact-email">Email</label>
-            <input type="email" name="" id="contact-email">
+        <div class="navigation-menu">
+          <a href="" class="menu-option">Home</a>
+          <a href="#service-catalog" class="menu-option">Services</a>
+          <a href="#our-projects" class="menu-option">Our Works</a>
+          <a href="" class="menu-option">Clients</a>
+          <a href="" class="menu-option">Products</a>
+        </div>
+      </header>
+      <main id="page-content">
+        <div class="page-introduction">
+          <div class="intro-section" id="intro-section-1">
+            <h6>Unhappy with your website?</h6>
+            <h1>We create beautiful and fast web services</h1>
+          </div>
+          <div class="intro-photo-container">
+            <img src="images/heroImage.jpg" alt="hero-image" class="intro-photo" />
+          </div>
+          <div class="intro-section" id="intro-section-2">
+            <h1>Story, emotion and purpose</h1>
+            <p>
+              We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your
+              strategic goals in short period of time.
+            </p>
+            <form class="contact-form">
+              <label for="contact-email">Want us to contact you?</label>
+              <div class="input-field">
+                <input type="email" name="" placeholder="Email" id="contact-email" />
+                <button type="submit">Join</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="service-catalog-section" id="service-catalog">
+          <h1 class="catalog-desc">We offer high demand services</h1>
+          <div class="services-list">
+            <div class="service-on-offer">
+              <div class="service-heading">
+                <div class="service-icon" id="service-01">
+                  <span class="material-icons">edit</span>
+                </div>
+                <h1>UI/UX Design</h1>
+              </div>
+              <div class="service-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                <button class="get-started-button">Get started</button>
+              </div>
+            </div>
+            <div class="service-on-offer">
+              <div class="service-heading">
+                <div class="service-icon" id="service-02">
+                  <span class="material-icons">code</span>
+                </div>
+                <h1>Front End</h1>
+              </div>
+              <div class="service-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                <button class="get-started-button">Get started</button>
+              </div>
+            </div>
+            <div class="service-on-offer">
+              <div class="service-heading">
+                <div class="service-icon" id="service-03">
+                  <span class="material-icons"> storage </span>
+                </div>
+                <h1>Back End</h1>
+              </div>
+              <div class="service-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                <button class="get-started-button">Get started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-projects-section" id="our-projects">
+          <h1 class="catalog-desc" id="projects-desc">Good design means good business</h1>
+          <div class="catalog-row">
+            <div class="design-item">
+              <img src="/images/smarthome.jpg" alt="smart-home" class="design-photo" />
+              <div class="design-description">
+                <h6 class="design-type">Full stack application</h6>
+                <h1 class="design-name">Smart home dashboard</h1>
+              </div>
+            </div>
+            <div class="design-item">
+              <img src="/images/onboard.png" alt="onboard" class="design-photo" />
+              <div class="design-description">
+                <h6 class="design-type">UX/UI design</h6>
+                <h1 class="design-name">Onboard application</h1>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-row">
+            <div class="design-item">
+              <img src="/images/booking.png" alt="booking" class="design-photo" />
+              <div class="design-description">
+                <h6 class="design-type">Mobile application</h6>
+                <h1 class="design-name">Booking system</h1>
+              </div>
+            </div>
+            <div class="design-item">
+              <img src="/images/juice-product.png" alt="juice-product" class="design-photo" />
+              <div class="design-description">
+                <h6 class="design-type">FrontEnd application</h6>
+                <h1 class="design-name">Juice product homepage</h1>
+              </div>
+            </div>
+          </div>
+          <div class="more-content"><a href="">see more</a><span class="material-icons"> arrow_right_alt </span></div>
+        </div>
+        <div class="team-section" id="our-team-work">
+          <div class="team-description">
+            <p class="section-title">Meet the team</p>
+            <h1 class="description">We are chilled and a laidback team</h1>
+            <h6 class="description-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+          </div>
+          <div class="team-gallery">
+            <img src="/images/person3.png" alt="person-3" class="team-pic" />
+            <div class="pic-col">
+              <img src="/images/person1.png" alt="person-1" class="team-pic" />
+              <img src="/images/person2.png" alt="person-2" class="team-pic" />
+            </div>
+          </div>
+        </div>
+
+        <div class="client-section" id="our-clients">
+          <p class="client-quote">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+          <div class="client-profile">
+            <img src="/images/person4.png" alt="person-4" class="client-photo" />
+            <div class="client-data">
+              <h1 class="client-name">Carlos Tran</h1>
+              <h3 class="client-profession">The Decorate Gatsby</h3>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="contact-section">
+        <div class="navigation-menu">
+          <a href="" class="menu-option">Home</a>
+          <a href="#service-catalog" class="menu-option">Services</a>
+          <a href="#our-team-work" class="menu-option">Our Works</a>
+          <a href="#our-clients" class="menu-option">Clients</a>
+          <a href="#our-projects" class="menu-option">Products</a>
+        </div>
+        <div class="brand-social-media">
+          <div class="homepage-logo">
+            <h1>Edie</h1>
+          </div>
+          <div class="main-social-media">
+            <a href=""><img src="/images/instagram.svg" alt="instagram-icon" class="social-media" /></a>
+            <a href=""><img src="/images/linkedin.svg" alt="linkedin-icon" class="social-media" /></a>
+            <a href=""><img src="/images/twitter.svg" alt="twitter-icon" class="social-media" /></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <label for="contact-email">Want us to contact you?</label>
+          <div class="input-field">
+            <input type="email" name="" placeholder="Email" id="contact-email" />
             <button type="submit">Join</button>
+          </div>
         </form>
       </div>
-
-    </main>
-    <footer><p>Created by <a href="https://github.com/andressalazard">andressalazard</a> - DevChallenges.io</p></footer>
-  </div>
-</body>
+      <p>Created by <a href="https://github.com/andressalazard">andressalazard</a> - DevChallenges.io</p>
+    </footer>
+  </body>
 </html>
