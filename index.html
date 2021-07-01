@@ -8,20 +8,33 @@
     <title>Edie Homepage</title>
   </head>
   <body>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-header">
+        <button onclick="mobileMenuNavigation()"><span class="material-icons"> close </span></button>
+      </div>
+      <div class="mobile-navigation-menu">
+        <a href="" class="mobile-menu-option" onclick="mobileMenuNavigation()">Home</a>
+        <a href="#service-catalog" class="mobile-menu-option" onclick="mobileMenuNavigation()">Services</a>
+        <a href="#our-team-work" class="mobile-menu-option" onclick="mobileMenuNavigation()">Our Works</a>
+        <a href="#our-clients" class="mobile-menu-option" onclick="mobileMenuNavigation()">Clients</a>
+        <a href="#our-projects" class="mobile-menu-option" onclick="mobileMenuNavigation()">Products</a>
+      </div>
+    </div>
+
     <div id="container">
       <header class="homepage-heading">
         <div class="homepage-logo">
           <h1>Edie</h1>
         </div>
         <div id="mobile-menu-burger">
-          <span class="material-icons"> menu </span>
+          <button onclick="mobileMenuNavigation()"><span class="material-icons"> menu </span></button>
         </div>
         <div class="navigation-menu">
           <a href="" class="menu-option">Home</a>
           <a href="#service-catalog" class="menu-option">Services</a>
-          <a href="#our-projects" class="menu-option">Our Works</a>
-          <a href="" class="menu-option">Clients</a>
-          <a href="" class="menu-option">Products</a>
+          <a href="#our-team-work" class="menu-option">Our Works</a>
+          <a href="#our-clients" class="menu-option">Clients</a>
+          <a href="#our-projects" class="menu-option">Products</a>
         </div>
       </header>
       <main id="page-content">
@@ -184,4 +197,15 @@
       <p>Created by <a href="https://github.com/andressalazard">andressalazard</a> - DevChallenges.io</p>
     </footer>
   </body>
+  <script>
+    function mobileMenuNavigation() {
+      var element = document.getElementById("mobile-menu");
+      if (element.classList.contains("mobile-menu__opened")) {
+        element.classList.remove("mobile-menu__opened");
+      } else {
+        element.classList.add("mobile-menu__opened");
+      }
+      return false;
+    }
+  </script>
 </html>
